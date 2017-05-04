@@ -10,4 +10,6 @@
 	<meta http-equiv="Content-Security-Policy" content="default-src 'self' http://code.jquery.com data: gap: https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" />
     <content src="index.html" />
     <access origin="*" />
+	<access origin="code.jquery.com" subdomains="true" />
+    <allow-navigation href="*://*.code.jquery.com/*" />
 </widget>
