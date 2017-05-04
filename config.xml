@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>HaloDunia</name>
+    <description>
+        A blank PhoneGap app.
+    </description>
+    <author email="support@phonegap.com" href="http://phonegap.com">
+        PhoneGap Team
+    </author>
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' http://code.jquery.com data: gap: https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *">
+    <content src="index.html" />
+    <access origin="*" />
+	<access origin="code.jquery.com" subdomains="true" />
+    <allow-navigation href="*://*.code.jquery.com/*" />
+</widget>
