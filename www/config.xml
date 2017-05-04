@@ -7,9 +7,9 @@
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
     </author>
-	<meta http-equiv="Content-Security-Policy" content="default-src 'self' http://code.jquery.com data: gap: https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" />
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' http://dpu.kapuaskab.go.id data: gap: https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" />
     <content src="index.html" />
     <access origin="*" />
-	<access origin="code.jquery.com" subdomains="true" />
-    <allow-navigation href="*://*.code.jquery.com/*" />
+	<access origin="dpu.kapuaskab.go.id" subdomains="true" />
+    <allow-navigation href="*://*.dpu.kapuaskab.go.id/*" />
 </widget>
