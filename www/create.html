@@ -12,15 +12,38 @@
     </head>
     <body>
         <script type="text/javascript" src="cordova.js"></script>
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$("#create").submit(function(e){
+				e.preventDefault();
+				var $form = $( this ), 
+					fterm = $form.find( "input[name='value']" ).val(),
+					furl = $form.attr( "action" );
+				$.ajax({
+					method: "GET",
+					dataType: "jsonp",
+					jsonpCallback: 'callback',
+					url: "http://dpu.kapuaskab.go.id/server/create.php?create=&value="+fterm,
+					success: function(x) {
+						alert(x.data);
+						location.href='index.html';
+					}
+				});
+			});
+		} );
+		</script>
 		<div data-role="page">
 			<div date-role="header">
 				<h1>Simple CRUD</h1>
 			</div>
 			<div date-role="main" class="ui-content">
-				<button onclick="location.href='create.html';">Create</button>
-				<button onclick="location.href='read.html';">Read</button>
-				<button onclick="alert('Update Button');">Update</button>
-				<button onclick="alert('Delete Button');">Delete</button>
+				<h1>Create</h1>
+				<form id="create">
+					<p>Input Data Value :</p>
+					<input type="text" name="value" />
+					<input type="submit" name="create" value="Create Now!" />
+				</form>
+				<button onclick="location.href='index.html';">Back</button>
 			</div>
 			<div date-role="footer">
 				<p align="center">2017 &copy; stevanry</p>
