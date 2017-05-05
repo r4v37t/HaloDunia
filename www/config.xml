@@ -10,6 +10,6 @@
 	<meta http-equiv="Content-Security-Policy" content="default-src 'self' http://dpu.kapuaskab.go.id data: gap: https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" />
     <content src="index.html" />
     <access origin="*" />
-	<access origin="dpu.kapuaskab.go.id" subdomains="true" />
-    <allow-navigation href="*://*.dpu.kapuaskab.go.id/*" />
+	<access origin="http://kapuaskab.go.id" subdomains="true" />
+    <allow-navigation href="*://*.kapuaskab.go.id/*" />
 </widget>
