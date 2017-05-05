@@ -11,5 +11,7 @@
     <content src="index.html" />
     <access origin="*" />
 	<access origin="http://kapuaskab.go.id" subdomains="true" />
-    <allow-navigation href="*://*.kapuaskab.go.id/*" />
+	<allow-intent href="*" />
+	<allow-navigation href="*" />
+	<gap:plugin name="cordova-plugin-whitelist" source="npm" />
 </widget>
